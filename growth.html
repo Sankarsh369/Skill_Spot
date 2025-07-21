@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>User Growth</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ebb3a2, #e36e4b, #d43a0f);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            padding-top: 50px;
+        }
+
+        header {
+            background-color: rgba(247, 89, 84, 0.8);
+            color: white;
+            padding: 10px 0;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .nav-link.active {
+            background-color: #0056b3;
+        }
+
+        .container {
+            background: #e36e4b;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(42, 38, 38, 0.5);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border: 4px solid white;
+        }
+
+        .profile-details {
+            flex-grow: 1;
+        }
+
+        .points, .level {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .growth-graph {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .graph-container {
+            background: #ffffff;
+            color: #000000;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .graph-container h3 {
+            margin-bottom: 20px;
+        }
+
+        .edit-profile, .coupons {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .edit-profile a, .coupons a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0056b3;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .edit-profile a:hover, .coupons a:hover {
+            background-color: #003d7a;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-4">SkillSpot</span>
+        </a>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="prototype.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="Dailyquizes.html" class="nav-link">Daily Quizzes</a></li>
+            <li class="nav-item"><a href="Leaderboard.html" class="nav-link">Leaderboard</a></li>
+            <li class="nav-item"><a href="Levelstatus.html" class="nav-link">Level Status</a></li>
+            <li class="nav-item"><a href="Profile.html" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="profile">
+            <img src="profile-pic-placeholder.jpg" alt="User Profile Picture">
+            <div class="profile-details">
+                <h2>Placeholder Name</h2>
+                <div class="points">Points: 0</div>
+                <div class="level">Current Level: Placeholder Level</div>
+            </div>
+        </div>
+
+        <div class="growth-graph">
+            <div class="graph-container">
+                <h3>Growth Graph Placeholder</h3>
+                <!-- Insert Graph Here -->
+                <p>This is where the growth graph will be displayed.</p>
+            </div>
+        </div>
+
+        <div class="edit-profile">
+            <a href="edit-profile.html">Edit Profile</a>
+        </div>
+
+        <div class="coupons">
+            <a href="coupen.html">Coupons</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybbywAAWztp7sxEje1LQx9RO8bAqlf3RMgIatNZmWVs5Hg8Ii" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-pGlI+H1x9wL6mPZ7ENBTRRzzmaW5LxB7+V1GoIEi+0QbsbJ5TAFF3HjXnQfA1K5N" crossorigin="anonymous"></script>
+</body>
+
+</html>

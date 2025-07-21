@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Leaderboard</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #f4f4f5 50%, #76b2fe 100%);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            padding-top: 50px;
+        }
+
+        header {
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            padding: 10px 0;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .nav-link.active {
+            background-color: #0056b3;
+        }
+
+        .container {
+            background: rgba(55, 167, 201, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .leaderboard {
+            margin-top: 20px;
+        }
+
+        .level-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+        }
+
+        .rank-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .rank-row:last-child {
+            border-bottom: none;
+        }
+
+        .rank {
+            font-weight: bold;
+        }
+
+        .user-name {
+            flex-grow: 1;
+            padding-left: 15px;
+        }
+
+        .points {
+            font-weight: bold;
+        }
+
+        .platinum {
+            color: #e5e4e2;
+        }
+
+        .gold {
+            color: #FFD700;
+        }
+
+        .silver {
+            color: #C0C0C0;
+        }
+
+        .bronze {
+            color: #CD7F32;
+        }
+
+        .level-title {
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .level-title:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 50px;
+            height: 4px;
+            background-color: currentColor;
+        }
+    </style>
+</head>
+
+<body>
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <span class="fs-4">SkillSpot</span>
+  </a>
+  <ul class="nav nav-pills">
+      <li class="nav-item"><a href="prototype.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="Dailyquizes.html" class="nav-link">Daily Quizzes</a></li>
+      <li class="nav-item"><a href="Leaderboard.html" class="nav-link active">Leaderboard</a></li>
+      <li class="nav-item"><a href="Levelstatus.html" class="nav-link">Level Status</a></li>
+      <li class="nav-item"><a href="Profile.html" class="nav-link">Profile</a></li>
+      <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+  </ul>
+</header> 
+    <div class="container leaderboard">
+        <h2 class="text-center">Leaderboard</h2>
+
+        <!-- Platinum Level -->
+        <div class="level-title platinum">Platinum Level</div>
+        <div class="rank-row">
+            <div class="rank">1</div>
+            <div class="user-name">User A</div>
+            <div class="points">95,000 Points</div>
+        </div>
+        <div class="rank-row">
+            <div class="rank">2</div>
+            <div class="user-name">User B</div>
+            <div class="points">85,000 Points</div>
+        </div>
+
+        <!-- Gold Level -->
+        <div class="level-title gold">Gold Level</div>
+        <div class="rank-row">
+            <div class="rank">1</div>
+            <div class="user-name">User C</div>
+            <div class="points">55,000 Points</div>
+        </div>
+        <div class="rank-row">
+            <div class="rank">2</div>
+            <div class="user-name">User D</div>
+            <div class="points">45,000 Points</div>
+        </div>
+
+        <!-- Silver Level -->
+        <div class="level-title silver">Silver Level</div>
+        <div class="rank-row">
+            <div class="rank">1</div>
+            <div class="user-name">User E</div>
+            <div class="points">25,000 Points</div>
+        </div>
+        <div class="rank-row">
+            <div class="rank">2</div>
+            <div class="user-name">User F</div>
+            <div class="points">20,000 Points</div>
+        </div>
+
+        <!-- Bronze Level -->
+        <div class="level-title bronze">Bronze Level</div>
+        <div class="rank-row">
+            <div class="rank">1</div>
+            <div class="user-name">User G</div>
+            <div class="points">9,500 Points</div>
+        </div>
+        <div class="rank-row">
+            <div class="rank">2</div>
+            <div class="user-name">User H</div>
+            <div class="points">7,000 Points</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybbywAAWztp7sxEje1LQx9RO8bAqlf3RMgIatNZmWVs5Hg8Ii" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-pGlI+H1x9wL6mPZ7ENBTRRzzmaW5LxB7+V1GoIEi+0QbsbJ5TAFF3HjXnQfA1K5N" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
